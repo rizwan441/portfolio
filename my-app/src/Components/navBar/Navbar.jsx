@@ -1,33 +1,45 @@
-import React from 'react'
-import { Box,Typography,styled } from '@mui/material'
+import React from "react";
+import { Box, Typography, styled } from "@mui/material";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const Wrapper = styled(Box)`
-margin-top:10px;
-display:flex;
-flex-direction:row;
-
-`
+  margin-top: 34px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 50px;
+  margin-right: 50px;
+`;
 const TextName = styled(Typography)`
-color:blue;
-margin-right:20px;
-margin-left:20px
-// text-decuration:underline;
-cursor:pointer
-
-
-
-`
+  color: blue;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  // text-decuration:underline;
+  cursor: pointer;
+`;
 
 const Navigation = styled(Box)`
-height: 27.00002098083496px;
-width: 276px;
-left: 582px;
-top: 37px;
-border-radius: null;
-justify-content:center;
+  display: flex;
+  flex-direction: row;
+  column-gap: 40px;
+`;
 
+const NavLink = styled("a")`
+  color: dark-blue;
+  font-size: 18px;
+  font-weight: 400px;
+`;
 
-`
+const NavIcons = styled(Box)`
+  display: flex;
+  width: 150px;
+  justify-content: space-between;
+  column-gap: 10px;
+`;
 
 const Navbar = () => {
   return (
@@ -36,24 +48,19 @@ const Navbar = () => {
         <TextName>Rizwan Zafar</TextName>
       </Box>
 
-      <Navigation style={{
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent:"space-evenly"
-      }}>
-      <a href="#">Home</a>
-      <a href="#about">About</a>
-      <a href="contact">Contact me</a>
-      <a href='#experiance'>Experiance</a>
-
+      <Navigation>
+        <NavLink>Home</NavLink>
+        <NavLink>About</NavLink>
+        <NavLink>Work</NavLink>
       </Navigation>
 
-      <Box>
-
-
-      </Box>
+      <NavIcons>
+        <FontAwesomeIcon icon={faEnvelope} />
+        <FontAwesomeIcon icon={faFacebook} />
+        <span>F</span>
+      </NavIcons>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
