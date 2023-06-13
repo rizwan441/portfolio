@@ -1,9 +1,5 @@
 import React from 'react'
-import { Box, Typography, styled } from '@mui/material'
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-
-
+import { Box,Typography,styled } from '@mui/material'
 
 const Wrapper = styled(Box)`
 margin-top:10px;
@@ -46,7 +42,7 @@ const Navbar = () => {
         flexDirection: 'row',
         justifyContent:"space-evenly"
       }}>
-      <div>Home</div>
+      <a href="#">Home</a>
       <a href="#about">About</a>
       <a href="contact">Contact me</a>
       <a href='#experiance'>Experiance</a>
@@ -55,10 +51,6 @@ const Navbar = () => {
 
       <Box>
 
-        <FontAwesomeIcon icon={faCoffee} />
-        <FontAwesomeIcon icon={faCoffee} />
-        <FontAwesomeIcon icon="fa-brands fa-facebook" />
-              <FontAwesomeIcon icon="check-square" />
 
       </Box>
     </Wrapper>
