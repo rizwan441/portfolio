@@ -12,7 +12,8 @@ color:blue;
 margin-right:20px;
 margin-left:20px
 // text-decuration:underline;
-cursor:pointer
+cursor:pointer;justify-content:center;
+
 
 
 
