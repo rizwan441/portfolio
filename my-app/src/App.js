@@ -1,14 +1,17 @@
 import './App.css';
-import CVButton from './Header/CVButton';
-import Header from './Header/Header';
-
+import Home from './Components/home/Home';
+// import CVButton from './Header/CVButton';
+// import Header from './Header/Header';
+import About from './Components/about/About';
 
 
 function App() {
   return (
     <div className="App">
-      <Header />  
-      <CVButton />
+      <Home />
+      <About />
+
+
    
     </div>
   );

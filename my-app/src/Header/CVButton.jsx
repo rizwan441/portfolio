@@ -1,13 +1,26 @@
 import React from 'react'
-import CV from './../Components/assets/CV.pdf'
-import imag from './../Components/assets/imag.png'
+import { Box, styled, Typography,Button } from '@mui/material'
+import Imag from './../Components/assets/imag.png'
+
+
 
 const CVButton = () => {
   return (
       <div>
-          <img src={imag} alt="apni" srcset="" />
-          <a href={CV} download>DownLoad Resume</a>
-          <a href='#contact'>Lets talk</a>
+           <Box style={{ }}>
+            <Box style={{  }} >
+          <img src={Imag} alt='my imag' style={{borderRadius:"50%",
+width:"",marginLeft:"50%", marginTop:"-5",
+
+height:"100%",
+        //   maxHeight: { xs: 233, md: 167 },
+                                //   maxWidth: { xs: 350, md: 250 },
+                            }} />
+         
+                            </Box>
+                       
+
+                    </Box>
       </div>
   )
 }

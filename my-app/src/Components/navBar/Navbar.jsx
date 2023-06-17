@@ -43,12 +43,12 @@ const NavIcons = styled(Box)`
 
 const Navbar = () => {
   return (
-    <Wrapper>
+    <Wrapper style={{}}>
       <Box>
         <TextName>Rizwan Zafar</TextName>
       </Box>
 
-      <Navigation>
+      <Navigation  >
         <NavLink>Home</NavLink>
         <NavLink>About</NavLink>
         <NavLink>Work</NavLink>
@@ -56,8 +56,7 @@ const Navbar = () => {
 
       <NavIcons>
         <FontAwesomeIcon icon={faEnvelope} />
-        <FontAwesomeIcon icon={faFacebook} />
-        <span>F</span>
+        
       </NavIcons>
     </Wrapper>
   );
